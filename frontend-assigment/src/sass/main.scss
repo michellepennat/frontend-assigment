@@ -1,7 +1,7 @@
-@import "utils/mixins", "utils/variables";
+@import "./utils/mixins", "./utils/variables";
 
-@import "base/generic", "base/typography", "base/reset";
+@import "./base/generic", "./base/typography", "./base/reset";
 
-@import "modules/all";
+@import "./modules/all";
 
-@import "vendors/all";
+@import "./vendors/all";
