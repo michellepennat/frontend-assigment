@@ -2,7 +2,7 @@ import React from "react";
 
 const Navigation = () => {
   return (
-    <div>
+    <div className="header__nav">
       <img alt=""/>
       <label></label>
       <button onClick={() => console.log()}>
