@@ -1,0 +1,31 @@
+header {
+  .account {
+    &__notification {
+      display: none;
+    }
+    &__profile {
+      &__button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: none;
+        border: none;
+
+        .photo {
+          width: 40px;
+          height: 40px;
+          border: 1 solid white;
+          border-radius: 100%;
+          margin-right: 7px;
+        }
+
+        .down {
+          width: 10px;
+        }
+      }
+    }
+    &__settings {
+      display: none;
+    }
+  }
+}
