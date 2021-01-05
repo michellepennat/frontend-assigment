@@ -1,37 +1,54 @@
 import React from "react";
 
-const News = (props) => {
+import ImageNewsJpg from "../../assets/images/image-new.jpg";
+import InformationJpg from "../../assets/images/information.jpg";
+import StarSvg from "../../assets/icons/star.svg";
+import ArrowSvg from "../../assets/icons/arrow.svg";
+import CommentsSvg from "../../assets/icons/comments.svg";
+
+const News = () => {
   return (
     <section className="news">
-      <img alt="Banner noticia" />
-      <h1>Title</h1>
-      <button>
-        <p>Guardar</p>
-      </button>
-      <div>
-        <img alt="Imagen de la noticia"/>
-        <h5>Noticiar DocRed</h5>
+      <div className="news__image">
+        <img src={ImageNewsJpg} alt="Banner noticia" />
+        <div className="news__image__tag">
+          <p>NOTICIA</p>
+        </div>
+      </div>
+      <div className="news__title">
+        <h1>Title</h1>
+        <button>
+          <p>Guardar</p>
+        </button>
+      </div>
+      <div className="news__information">
+        <img src={InformationJpg} alt="Imagen de la noticia" />
         <div>
+          <h5>Noticias DocRed</h5>
           <span>Hace 12 h | Publicado: 17/01/18 | Lectura: 3 min</span>
         </div>
       </div>
-      <div>
+      <div className="news__tags">
         <div>Medicina Interna</div>
       </div>
-      <p>Lorem ipsum</p>
-      <div>
-        <button>
-          <img alt="Destacar" />
-          <span>Destacar</span>
-        </button>
-        <button>
-          <img alt="Comentar" />
-          <span>Comentar</span>
-        </button>
-        <button>
-          <img alt="Compartir" />
-          <span>Compartir</span>
-        </button>
+      <div className="news__paragraph">
+        <p>Lorem ipsum</p>
+      </div>
+      <div className="news__buttons">
+        <div className="news__buttons__button">
+          <button>
+            <img src={StarSvg} alt="Destacar" />
+            <span>Destacar</span>
+          </button>
+          <button>
+            <img src={CommentsSvg} alt="Comentar" />
+            <span>Comentar</span>
+          </button>
+          <button>
+            <img src={ArrowSvg} alt="Compartir" />
+            <span>Compartir</span>
+          </button>
+        </div>
       </div>
     </section>
   );
