@@ -1,5 +1,5 @@
 import React from "react";
-import { Menu, Dropdown, notification } from "antd";
+import { Menu, Dropdown } from "antd";
 
 import DownSvg from "../../../../assets/icons/down.svg";
 import ProfileJpg from "../../../../assets/images/profile.jpg";

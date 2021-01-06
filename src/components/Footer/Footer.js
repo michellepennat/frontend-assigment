@@ -6,7 +6,7 @@ const Footer = (props) => {
   return (
     <footer>
       <img className="logo" src={LogoPng} alt="Logo" />
-      <div className="information"> 
+      <div className="information">
         <a href="/questions">Preguntas frecuentes</a>
         <a href="/contactus">Contáctanos</a>
         <a href="/information">Información</a>
