@@ -11,12 +11,10 @@ const menu = (
     <Menu.Item key="0">
       <a href="/account">Mi perfil</a>
     </Menu.Item>
-    <Menu.Divider />
-    <Menu.Item key="1">
+    <Menu.Item className="menu__notification" key="1">
       <a href="/notification">Notificaciones</a>
     </Menu.Item>
-    <Menu.Divider />
-    <Menu.Item key="2">
+    <Menu.Item className="menu__configuration" key="2">
       <a href="/configuration">Configuración</a>
     </Menu.Item>
   </Menu>
