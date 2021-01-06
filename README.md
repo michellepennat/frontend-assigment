@@ -35,3 +35,12 @@ Puntos extras:
 - Unit testing.
 - Linting y Prettier
 - Docker
+
+
+# Getting Started with Create React App
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
