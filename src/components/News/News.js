@@ -7,6 +7,18 @@ import ArrowSvg from "../../assets/icons/arrow.svg";
 import CommentsSvg from "../../assets/icons/comments.svg";
 import article from "../../mockup/article.json";
 
+const tagsDummy = [
+  {
+    title: "Medicina Interna",
+  },
+  {
+    title: "Pediatría",
+  },
+  {
+    title: "Obstetricia",
+  },
+];
+
 const News = () => {
   return (
     <section className="news">
@@ -30,7 +42,11 @@ const News = () => {
         </div>
       </div>
       <div className="news__tags">
-        <div>Medicina Interna</div>
+        {tagsDummy.map((tagsItem, i) => (
+          <div key={i} className="news__tags__tag">
+            <p>{tagsItem.title}</p>
+          </div>
+        ))}
       </div>
       <div
         className="news__paragraph"
