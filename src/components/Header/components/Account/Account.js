@@ -1,8 +1,10 @@
 import React from "react";
-import { Menu, Dropdown } from "antd";
+import { Menu, Dropdown, notification } from "antd";
 
 import DownSvg from "../../../../assets/icons/down.svg";
 import ProfileJpg from "../../../../assets/images/profile.jpg";
+import NotificationSvg from "../../../../assets/icons/notification.svg";
+import SettingsSvg from "../../../../assets/icons/settings.svg";
 
 const menu = (
   <Menu>
@@ -19,15 +21,39 @@ const menu = (
     </Menu.Item>
   </Menu>
 );
+const notificaciones = (
+  <Menu>
+    <Menu.Item key="0">
+      <a href="/notifications">Una notificaión</a>
+    </Menu.Item>
+  </Menu>
+);
 
 const Account = () => {
   return (
     <div className="account">
-      <div className="account__notification">
-        <p>1</p>
-        <img alt="Notificacion" />
-      </div>
-      <Dropdown placement="bottomRight" className="account__profile" overlay={menu} trigger={["click"]}>
+      <Dropdown
+        placement="bottomRight"
+        className="account__notification"
+        overlay={notificaciones}
+        trigger={["click"]}
+      >
+        <button
+          className="account__notification__button"
+          onClick={(e) => e.preventDefault()}
+        >
+          <div className="number">
+            <p>1</p>
+          </div>
+          <img src={NotificationSvg} alt="Notificacion" />
+        </button>
+      </Dropdown>
+      <Dropdown
+        placement="bottomRight"
+        className="account__profile"
+        overlay={menu}
+        trigger={["click"]}
+      >
         <button
           className="account__profile__button"
           onClick={(e) => e.preventDefault()}
@@ -39,7 +65,7 @@ const Account = () => {
       </Dropdown>
       <div className="account__settings">
         <a href="/settings">
-          <img alt="Ajustes" />
+          <img src={SettingsSvg} alt="Ajustes" />
         </a>
       </div>
     </div>

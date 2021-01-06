@@ -28,4 +28,74 @@ header {
       display: none;
     }
   }
+
+  @media screen and (min-width: $large) {
+    .account {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      &__notification {
+        display: block;
+        position: relative;
+        margin-right: 15px;
+        &__button {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          background: none;
+          border: none;
+          .number {
+            background-color: $green-color;
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 12px;
+            bottom: 16px;
+            p {
+              font-size: 0.8rem;
+              color: white;
+            }
+          }
+          img {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+      &__profile {
+        &__button {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          background: none;
+          border: none;
+
+          .photo {
+            width: 40px;
+            height: 40px;
+            border: 1 solid white;
+            border-radius: 100%;
+            margin-right: 7px;
+          }
+
+          .down {
+            width: 10px;
+          }
+        }
+      }
+      &__settings {
+        display: block;
+        margin-left: 15px;
+        img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
 }
