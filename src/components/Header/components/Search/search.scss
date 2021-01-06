@@ -2,4 +2,33 @@ header {
   .search {
     display: none;
   }
+  @media screen and (min-width: $large) {
+    .search {
+      display: flex;
+
+      button {
+        width: 40px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px 0 0 0;
+        border: none;
+        background-color: white;
+      }
+
+      input {
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 0 10px 0;
+        border: none;
+        padding: 0 5px;
+        background-color: white;
+        margin-left: 1px;
+        font-size: 0.9rem;
+      }
+    }
+  }
 }

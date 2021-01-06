@@ -4,8 +4,10 @@ import SearchSvg from "../../../../assets/icons/search.svg";
 const Search = () => {
   return (
     <div className="search">
-      <img src={SearchSvg} alt="Buscar" style={{ width: 30, height: 30 }}/>
-      <input />
+      <button>
+        <img src={SearchSvg} alt="Buscar" style={{ width: 20, height: 20 }} />
+      </button>
+      <input placeholder="¿Qué estás buscando?" />
     </div>
   );
 };
