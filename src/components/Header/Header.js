@@ -5,15 +5,13 @@ import Account from "./components/Account/Account";
 
 import LogoPng from "../../assets/images/logo.png";
 
-const Header = () => {
-  return (
-    <header>
-      <img className="logo" src={LogoPng} alt="Logo" />
-      <Search />
-      <Navigation />
-      <Account />
-    </header>
-  );
-};
+const Header = () => (
+  <header>
+    <img className="logo" src={LogoPng} alt="Logo" />
+    <Search />
+    <Navigation />
+    <Account />
+  </header>
+);
 
 export default Header;

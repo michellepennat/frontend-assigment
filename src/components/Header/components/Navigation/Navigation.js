@@ -12,16 +12,18 @@ const menu = (
   </Menu>
 );
 
-const Navigation = () => {
-  return (
-    <Dropdown className="nav" overlay={menu} trigger={["click"]}>
-      <button className="nav__button" onClick={(e) => e.preventDefault()}>
-        <img src={HomeSvg} alt="Inicio" className="home" />
-        <p>Inicio</p>
-        <img src={DownSvg} alt="Flecha abajo" className="down" />
-      </button>
-    </Dropdown>
-  );
-};
+const Navigation = () => (
+  <Dropdown className="nav" overlay={menu} trigger={["click"]}>
+    <button
+      type="button"
+      className="nav__button"
+      onClick={(e) => e.preventDefault()}
+    >
+      <img src={HomeSvg} alt="Inicio" className="home" />
+      <p>Inicio</p>
+      <img src={DownSvg} alt="Flecha abajo" className="down" />
+    </button>
+  </Dropdown>
+);
 
 export default Navigation;
